@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent {
+  // the input() decorator signifies that item variable can receive value from
+  // the parent commponent
+  @Input() item: string = '';
 
 }
